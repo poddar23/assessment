@@ -1,0 +1,60 @@
+<!doctype html>
+<label class="field">
+    <link rel="stylesheet" href="styles.css">
+
+<span>Applicant Name</span>
+<input type="text" name="name" id="name" required />
+<small class="error" data-for="name"></small>
+</label>
+
+
+<label class="field">
+<span>Email Address</span>
+<input type="email" name="email" id="email" required />
+<small class="error" data-for="email"></small>
+</label>
+
+
+<label class="field">
+<span>Phone Number</span>
+<input type="tel" name="phone" id="phone" inputmode="numeric" required />
+<small class="error" data-for="phone"></small>
+</label>
+
+
+<label class="field">
+<span>Date of Appointment</span>
+<input type="date" name="date" id="date" required />
+<small class="error" data-for="date"></small>
+</label>
+
+
+<label class="field">
+<span>Time of Appointment</span>
+<input type="time" name="time" id="time" required />
+<small class="error" data-for="time"></small>
+</label>
+
+
+<label class="field full">
+<span>Medical disease Comment</span>
+<textarea name="cover" id="cover" rows="5" required></textarea>
+<small class="error" data-for="cover"></small>
+</label>
+</div>
+
+
+<div class="actions">
+<button type="submit" class="btn">Submit Application</button>
+<a href="view-appointment.html" class="btn secondary">View Appointments</a>
+</div>
+</form>
+
+
+<div id="messageContainer" aria-live="polite"></div>
+</main>
+
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
